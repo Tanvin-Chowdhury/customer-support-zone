@@ -4,44 +4,59 @@ import React from "react";
 const Ticket = ({ ticket }) => {
   const priorityColors = {
     "Low-priority": "text-green-600",
-    "Medium-priority": "text-yellow-300",
+    "Medium-priority": "text-yellow-500",
     "High-priority": "text-red-600",
   };
 
+  const statusStyles = {
+    Open: "bg-green-100 text-green-600",
+    "In Progress": "bg-yellow-100 text-yellow-700",
+    Resolved: "bg-red-100 text-red-600",
+  };
+
   return (
-    <div className="flex flex-col">
-      <div className="bg-white p-4 rounded-lg shadow border">
-        <div className="flex justify-between ">
-          <h3 className="font-semibold text-[18px]">{ticket.title}</h3>
+    <div className="bg-white p-5 rounded-sm border border-gray-200 shadow-sm hover:shadow-md transition">
+      <div className="flex justify-between items-start gap-3">
+        <h3 className="font-semibold text-[18px] text-[#34485A] leading-snug">
+          {ticket?.title}
+        </h3>
+
+        <div
+          className={`flex items-center gap-2 px-3 py-[4px] rounded-full text-xs font-semibold
+          ${statusStyles[ticket?.status] || "bg-gray-100 text-gray-600"}`}
+        >
+          <span className="w-2 h-2 rounded-full bg-current"></span>
+          {ticket?.status}
+        </div>
+      </div>
+
+      {/* Description */}
+      <p className="text-sm text-gray-500 mt-2 line-clamp-2">
+        {ticket?.description}
+      </p>
+
+      {/* Footer */}
+      <div className="flex justify-between items-center mt-4 text-sm">
+        {/* Ticket number + priority */}
+        <div className="flex items-center gap-2 text-gray-400">
+          <span>#{ticket?.ticketNo}</span>
+
           <span
-            className={`text-sm font-semibold px-3 py-1 rounded-full ${
-              ticket.status === "Open"
-                ? "bg-green-100 text-green-600"
-                : "bg-yellow-100 text-yellow-700"
-            }`}
+            className={`text-xs font-semibold 
+            ${priorityColors[ticket?.priority] || "text-gray-500"}`}
           >
-            {ticket.status}
+            {ticket?.priority?.toUpperCase()}
           </span>
         </div>
 
-        <p className="text-sm text-gray-500 mt-2">{ticket.description}</p>
+        {/* Customer + date */}
+        <div className="flex items-center gap-3 text-gray-600">
+          <span>{ticket?.customer}</span>
 
-        <div className="flex justify-between mt-3">
-          <div className="text-sm text-gray-400">
-            <span>{ticket.ticketNo}</span>
-            <span
-              className={`text-sm font-semibold px-3 py-1 rounded-full ${priorityColors[ticket.priority] || "text-gray-600"}`}
-            >
-              {ticket.priority}
-            </span>
-          </div>
-          <div className="flex items-center gap-5 text-sm text-gray-600">
-            <span>{ticket.customer}</span>
-            <span className="flex items-center gap-1">
-              <Calendar size={16} />
-              {new Date(ticket.createdAt).toLocaleDateString()}{" "}
-            </span>
-          </div>
+          <span className="flex items-center gap-1">
+            <Calendar size={14} />
+            {new Date(ticket?.createdAt).toLocaleDateString("en-US")}
+          </span>
         </div>
       </div>
     </div>
