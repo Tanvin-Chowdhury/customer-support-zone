@@ -16,7 +16,7 @@ const Ticket = ({ ticket, handleAddToCart }) => {
 
   return (
     <div
-      className="bg-white p-5 rounded-sm border border-gray-200 shadow-sm hover:shadow-md transition cursor-pointer"
+      className="bg-white p-5 rounded-sm border border-gray-100 shadow-sm hover:shadow-md transition cursor-pointer"
       onClick={() => handleAddToCart(ticket)}
     >
       <div className="flex justify-between items-start gap-3">
@@ -33,14 +33,11 @@ const Ticket = ({ ticket, handleAddToCart }) => {
         </div>
       </div>
 
-      {/* Description */}
       <p className="text-sm text-gray-500 mt-2 line-clamp-2">
         {ticket?.description}
       </p>
 
-      {/* Footer */}
       <div className="flex justify-between items-center mt-4 text-sm">
-        {/* Ticket number + priority */}
         <div className="flex items-center gap-2 text-gray-400">
           <span>#{ticket?.ticketNo}</span>
 
@@ -52,7 +49,6 @@ const Ticket = ({ ticket, handleAddToCart }) => {
           </span>
         </div>
 
-        {/* Customer + date */}
         <div className="flex items-center gap-3 text-gray-600">
           <span>{ticket?.customer}</span>
 

@@ -2,15 +2,15 @@ const getCartFromLocalStorage = () =>{
     
     const storedCartString = localStorage.getItem('cart');
     if(storedCartString){
-        const storedCart = JSON.part(storedCartString);
+        const storedCart = JSON.parse(storedCartString);
         return storedCart;
     }
     return [];
 }
 
 const saveCartToLacalStorage = cart =>{
-    const CartStringified = JSON.stringify(cart);
-    localStorage.setItem('cart, cartStringified');
+    const cartStringified = JSON.stringify(cart);
+    localStorage.setItem('cart', cartStringified);
 }
 
 const addItemToCartLocalStorage = id =>{
