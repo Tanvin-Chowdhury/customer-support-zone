@@ -1,137 +1,152 @@
 [
   {
     "id": 1,
-    "title": "Login Issues - Can't Access Account",
-    "description": "Customer cannot log into the system and receives an invalid credentials error.",
-    "customer": "John Smith",
-    "priority": "Low",
+    "title": "Login Issues – Can't Access Account",
+    "description": "Customer is unable to log into their account. They receive an error message saying 'Invalid credentials'.",
+    "ticketNo": "#1001",
+    "customer": "Alice Johnson",
+    "priority": "Low-priority",
     "status": "Open",
-    "createdAt": "2025-11-15"
+    "createdAt": "2026-03-01"
   },
   {
     "id": 2,
-    "title": "Payment Failed - Card Declined",
-    "description": "Customer attempted to complete payment but the card was declined multiple times.",
-    "customer": "Emily Johnson",
-    "priority": "High",
+    "title": "Payment Failed – Card Declined",
+    "description": "Customer attempted to pay invoice but card was declined multiple times.",
+    "ticketNo": "#1002",
+    "customer": "Bob Smith",
+    "priority": "High-priority",
     "status": "Open",
-    "createdAt": "2025-11-16"
+    "createdAt": "2026-03-01"
   },
   {
     "id": 3,
     "title": "Unable to Download Invoice",
-    "description": "Customer cannot download invoice from the billing section.",
-    "customer": "Michael Brown",
-    "priority": "Medium",
+    "description": "Customer cannot download the invoice from dashboard.",
+    "ticketNo": "#1003",
+    "customer": "Catherine Lee",
+    "priority": "Medium-priority",
     "status": "In Progress",
-    "createdAt": "2025-11-15"
+    "createdAt": "2026-03-02"
   },
   {
     "id": 4,
     "title": "Incorrect Billing Address",
-    "description": "Billing address is displayed incorrectly after checkout.",
-    "customer": "Sarah Wilson",
-    "priority": "Low",
+    "description": "Billing address appears incorrect after payment.",
+    "ticketNo": "#1004",
+    "customer": "David Brown",
+    "priority": "Low-priority",
     "status": "Open",
-    "createdAt": "2025-11-14"
+    "createdAt": "2026-03-02"
   },
   {
     "id": 5,
-    "title": "App Crash on Startup",
-    "description": "Mobile application crashes immediately after launching.",
-    "customer": "David Martinez",
-    "priority": "Critical",
+    "title": "App Crash on Launch",
+    "description": "Mobile app crashes immediately when opened.",
+    "ticketNo": "#1005",
+    "customer": "Emma Wilson",
+    "priority": "Medium-priority",
     "status": "Open",
-    "createdAt": "2025-11-15"
+    "createdAt": "2026-03-03"
   },
   {
     "id": 6,
     "title": "Refund Not Processed",
     "description": "Customer requested refund but it hasn't been processed yet.",
-    "customer": "Sophia Taylor",
-    "priority": "High",
+    "ticketNo": "#1006",
+    "customer": "Frank Miller",
+    "priority": "High-priority",
     "status": "In Progress",
-    "createdAt": "2025-11-16"
+    "createdAt": "2026-03-03"
   },
   {
     "id": 7,
-    "title": "Password Reset Email Not Received",
-    "description": "Customer tried to reset password but did not receive reset email.",
-    "customer": "James Anderson",
-    "priority": "Medium",
+    "title": "Feature Request – Dark Mode",
+    "description": "Customer requested a dark mode option in the app.",
+    "ticketNo": "#1007",
+    "customer": "Grace Adams",
+    "priority": "Low-priority",
     "status": "Open",
-    "createdAt": "2025-11-17"
+    "createdAt": "2026-03-04"
   },
   {
     "id": 8,
-    "title": "Slow Dashboard Loading",
-    "description": "Dashboard takes too long to load for some users.",
-    "customer": "Olivia Thomas",
-    "priority": "Medium",
-    "status": "Open",
-    "createdAt": "2025-11-18"
+    "title": "Slow Website Performance",
+    "description": "Website loads very slowly for some users.",
+    "ticketNo": "#1008",
+    "customer": "Henry Thompson",
+    "priority": "Medium-priority",
+    "status": "In Progress",
+    "createdAt": "2026-03-04T12:25:00Z"
   },
   {
     "id": 9,
-    "title": "File Upload Not Working",
-    "description": "Users cannot upload profile pictures.",
-    "customer": "William Jackson",
-    "priority": "High",
-    "status": "In Progress",
-    "createdAt": "2025-11-18"
+    "title": "Password Reset Email Not Received",
+    "description": "Customer tried resetting password but no email received.",
+    "ticketNo": "#1009",
+    "customer": "Isabella Martinez",
+    "priority": "High-priority",
+    "status": "Open",
+    "createdAt": "2026-03-05"
   },
   {
     "id": 10,
-    "title": "Notifications Not Showing",
-    "description": "Customer reports missing notifications in the app.",
-    "customer": "Ava White",
-    "priority": "Low",
+    "title": "Error 500 on Checkout",
+    "description": "Server returns Error 500 when customer tries to checkout.",
+    "ticketNo": "#1010",
+    "customer": "Jack Taylor",
+    "priority": "Low-priority",
     "status": "Open",
-    "createdAt": "2025-11-19"
+    "createdAt": "2026-03-05"
   },
   {
     "id": 11,
-    "title": "Account Suspended Unexpectedly",
-    "description": "User account was suspended without warning.",
-    "customer": "Daniel Harris",
-    "priority": "Critical",
-    "status": "Open",
-    "createdAt": "2025-11-20"
+    "title": "Missing Order Confirmation",
+    "description": "Customer did not receive confirmation after placing an order.",
+    "ticketNo": "#1011",
+    "customer": "Karen Walker",
+    "priority": "Medium-priority",
+    "status": "In Progress",
+    "createdAt": "2026-03-06"
   },
   {
     "id": 12,
-    "title": "Duplicate Charges",
-    "description": "Customer was charged twice for the same order.",
-    "customer": "Isabella Martin",
-    "priority": "High",
-    "status": "In Progress",
-    "createdAt": "2025-11-20"
+    "title": "App Notifications Not Working",
+    "description": "Push notifications are not received on Android devices.",
+    "ticketNo": "#1012",
+    "customer": "Liam Harris",
+    "priority": "High-priority",
+    "status": "Open",
+    "createdAt": "2026-03-06"
   },
   {
     "id": 13,
-    "title": "Profile Update Not Saving",
-    "description": "Changes to profile information are not being saved.",
-    "customer": "Matthew Thompson",
-    "priority": "Medium",
+    "title": "UI Glitch on Dashboard",
+    "description": "Widgets overlap when resizing the window.",
+    "ticketNo": "#1013",
+    "customer": "Mia Robinson",
+    "priority": "Low-priority",
     "status": "Open",
-    "createdAt": "2025-11-21"
+    "createdAt": "2026-03-06"
   },
   {
     "id": 14,
-    "title": "Search Feature Not Working",
-    "description": "Search results are not appearing after entering keywords.",
-    "customer": "Mia Garcia",
-    "priority": "Medium",
-    "status": "Open",
-    "createdAt": "2025-11-21"
+    "title": "Unable to Upload Profile Picture",
+    "description": "Profile picture upload fails with unknown error.",
+    "ticketNo": "#1014",
+    "customer": "Noah King",
+    "priority": "Medium-priority",
+    "status": "In Progress",
+    "createdAt": "2026-03-07"
   },
   {
     "id": 15,
-    "title": "Order History Missing",
-    "description": "Customer cannot see previous orders in their account.",
-    "customer": "Ethan Rodriguez",
-    "priority": "Low",
+    "title": "Subscription Cancellation Issue",
+    "description": "Customer cannot cancel subscription from dashboard.",
+    "ticketNo": "#1015",
+    "customer": "Olivia Scott",
+    "priority": "High-priority",
     "status": "Open",
-    "createdAt": "2025-11-22"
+    "createdAt": "2026-03-07"
   }
 ]
