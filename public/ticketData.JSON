@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Login Issues - Can't Access Account",
+    "description": "Customer cannot log into the system and receives an invalid credentials error.",
+    "customer": "John Smith",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-11-15"
+  },
+  {
+    "id": 2,
+    "title": "Payment Failed - Card Declined",
+    "description": "Customer attempted to complete payment but the card was declined multiple times.",
+    "customer": "Emily Johnson",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-11-16"
+  },
+  {
+    "id": 3,
+    "title": "Unable to Download Invoice",
+    "description": "Customer cannot download invoice from the billing section.",
+    "customer": "Michael Brown",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-11-15"
+  },
+  {
+    "id": 4,
+    "title": "Incorrect Billing Address",
+    "description": "Billing address is displayed incorrectly after checkout.",
+    "customer": "Sarah Wilson",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-11-14"
+  },
+  {
+    "id": 5,
+    "title": "App Crash on Startup",
+    "description": "Mobile application crashes immediately after launching.",
+    "customer": "David Martinez",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2025-11-15"
+  },
+  {
+    "id": 6,
+    "title": "Refund Not Processed",
+    "description": "Customer requested refund but it hasn't been processed yet.",
+    "customer": "Sophia Taylor",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-11-16"
+  },
+  {
+    "id": 7,
+    "title": "Password Reset Email Not Received",
+    "description": "Customer tried to reset password but did not receive reset email.",
+    "customer": "James Anderson",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-11-17"
+  },
+  {
+    "id": 8,
+    "title": "Slow Dashboard Loading",
+    "description": "Dashboard takes too long to load for some users.",
+    "customer": "Olivia Thomas",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-11-18"
+  },
+  {
+    "id": 9,
+    "title": "File Upload Not Working",
+    "description": "Users cannot upload profile pictures.",
+    "customer": "William Jackson",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-11-18"
+  },
+  {
+    "id": 10,
+    "title": "Notifications Not Showing",
+    "description": "Customer reports missing notifications in the app.",
+    "customer": "Ava White",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-11-19"
+  },
+  {
+    "id": 11,
+    "title": "Account Suspended Unexpectedly",
+    "description": "User account was suspended without warning.",
+    "customer": "Daniel Harris",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2025-11-20"
+  },
+  {
+    "id": 12,
+    "title": "Duplicate Charges",
+    "description": "Customer was charged twice for the same order.",
+    "customer": "Isabella Martin",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-11-20"
+  },
+  {
+    "id": 13,
+    "title": "Profile Update Not Saving",
+    "description": "Changes to profile information are not being saved.",
+    "customer": "Matthew Thompson",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-11-21"
+  },
+  {
+    "id": 14,
+    "title": "Search Feature Not Working",
+    "description": "Search results are not appearing after entering keywords.",
+    "customer": "Mia Garcia",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-11-21"
+  },
+  {
+    "id": 15,
+    "title": "Order History Missing",
+    "description": "Customer cannot see previous orders in their account.",
+    "customer": "Ethan Rodriguez",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-11-22"
+  }
+]
