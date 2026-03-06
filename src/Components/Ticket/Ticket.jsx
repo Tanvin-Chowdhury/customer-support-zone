@@ -1,7 +1,7 @@
 import { Calendar } from "lucide-react";
 import React from "react";
 
-const Ticket = ({ ticket }) => {
+const Ticket = ({ ticket, handleAddToCart }) => {
   const priorityColors = {
     "Low-priority": "text-green-600",
     "Medium-priority": "text-yellow-500",
@@ -15,7 +15,10 @@ const Ticket = ({ ticket }) => {
   };
 
   return (
-    <div className="bg-white p-5 rounded-sm border border-gray-200 shadow-sm hover:shadow-md transition">
+    <div
+      className="bg-white p-5 rounded-sm border border-gray-200 shadow-sm hover:shadow-md transition cursor-pointer"
+      onClick={() => handleAddToCart(ticket)}
+    >
       <div className="flex justify-between items-start gap-3">
         <h3 className="font-semibold text-[18px] text-[#34485A] leading-snug">
           {ticket?.title}
