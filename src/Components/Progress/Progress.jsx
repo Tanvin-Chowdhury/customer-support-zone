@@ -1,18 +1,19 @@
 import React from "react";
 
-const Progress = () => {
+const Progress = ({ cart, resolvedTickets }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 mb-10">
-      {/* In Progress */}
-      <div className="bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-xl shadow p-10">
-        <p className="text-lg opacity-90">In-Progress</p>
-        <h1 className="text-5xl font-bold mt-3">0</h1>
+    <div className=" flex flex-wrap gap-5 justify-between items-center min-h-90 py-10 px-1">
+      <div className="in-progress flex-1 hero-gradient-left rounded-lg text-center text-white   min-height-220px;">
+        <div className="info hero-bg-image py-10 px-20 flex flex-col justify-center items-center">
+          <h2 className="text-3xl">In-Progress</h2>
+          <h3 className="font-semibold text-6xl">{cart.length}</h3>
+        </div>
       </div>
-
-      {/* Resolved */}
-      <div className="bg-gradient-to-r from-green-400 to-teal-600 text-white rounded-xl shadow p-10">
-        <p className="text-lg opacity-90">Resolved</p>
-        <h1 className="text-5xl font-bold mt-3">0</h1>
+      <div className="resolved flex-1 hero-gradient-right rounded-lg text-center text-white   min-height-220px;">
+        <div className="info hero-bg-image py-10 px-20 flex flex-col justify-center items-center">
+          <h2 className="text-3xl">Resolved</h2>
+          <h3 className="font-semibold text-6xl">{resolvedTickets.length}</h3>
+        </div>
       </div>
     </div>
   );

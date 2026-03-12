@@ -11,7 +11,7 @@ const Navbar = () => {
           </h1>
         </div>
 
-        <div className="flex items-center text-[16px] gap-[32px] text-[14px] text-gray-600">
+        <div className="flex items-center text-[16px] gap-[32px] text-gray-600">
           <a className="hover:text-black" href="">
             Home
           </a>

@@ -9,14 +9,14 @@ const Ticket = ({ ticket, handleAddToCart }) => {
   };
 
   const statusStyles = {
-    Open: "bg-green-100 text-green-600",
-    "In Progress": "bg-yellow-100 text-yellow-700",
+    Open: "bg-[#B9F8CF] text-[#0B5E06]",
+    "In Progress": "bg-[#F8F3B9] text-[#9C7700]",
     Resolved: "bg-red-100 text-red-600",
   };
 
   return (
     <div
-      className="bg-white p-5 rounded-sm border border-gray-100 shadow-sm hover:shadow-md transition cursor-pointer"
+      className="bg-white p-5 rounded-sm border border-gray-100 shadow-md hover:shadow-md transition cursor-pointer"
       onClick={() => handleAddToCart(ticket)}
     >
       <div className="flex justify-between items-start gap-3">
@@ -25,24 +25,22 @@ const Ticket = ({ ticket, handleAddToCart }) => {
         </h3>
 
         <div
-          className={`flex items-center gap-2 px-3 py-[4px] rounded-full text-xs font-semibold
-          ${statusStyles[ticket?.status] || "bg-gray-100 text-gray-600"}`}
+          className={`flex items-center gap-2 px-3 py-2 rounded-full text-xs font-semibold whitespace-nowrap
+      ${statusStyles[ticket?.status] || "bg-gray-100 text-gray-600"}`}
         >
-          <span className="w-2 h-2 rounded-full bg-current"></span>
+          <span className="w-4 h-4 rounded-full bg-current"></span>
           {ticket?.status}
         </div>
       </div>
 
-      <p className="text-sm text-gray-500 mt-2 line-clamp-2">
-        {ticket?.description}
-      </p>
+      <p className="text-sm text-gray-500 mt-2">{ticket?.description}</p>
 
       <div className="flex justify-between items-center mt-4 text-sm">
         <div className="flex items-center gap-2 text-gray-400">
-          <span>#{ticket?.ticketNo}</span>
+          <span className="text-[#627382] font-medium">{ticket?.ticketNo}</span>
 
           <span
-            className={`text-xs font-semibold 
+            className={`text-[14px] font-medium text-[#627382]
             ${priorityColors[ticket?.priority] || "text-gray-500"}`}
           >
             {ticket?.priority?.toUpperCase()}
@@ -50,7 +48,9 @@ const Ticket = ({ ticket, handleAddToCart }) => {
         </div>
 
         <div className="flex items-center gap-3 text-gray-600">
-          <span>{ticket?.customer}</span>
+          <span className="text-[#627382] text-[14px] font-[400]">
+            {ticket?.customer}
+          </span>
 
           <span className="flex items-center gap-1">
             <Calendar size={14} />

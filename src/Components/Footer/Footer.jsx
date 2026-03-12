@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gray-300 px-10 py-10">
+    <footer className="bg-black text-gray-300 px-10 py-10 mt-10">
       <div className="grid grid-cols-5 gap-8">
         <div>
           <h3 className="text-white font-semibold mb-3">CS – Ticket System</h3>
@@ -42,10 +42,18 @@ const Footer = () => {
         <div>
           <h4 className="text-white mb-3">Social Links</h4>
           <ul className="space-y-2 text-sm ul">
-            <li>@CS — Ticket System</li>
-            <li>@CS — Ticket System</li>
-            <li>@CS — Ticket System</li>
-            <li>support@cst.com</li>
+            <li>
+              <i class="fa-brands fa-x-twitter"></i> @CS — Ticket System
+            </li>
+            <li>
+              <i class="fa-brands fa-instagram"></i>@CS — Ticket System
+            </li>
+            <li>
+              <i class="fa-brands fa-facebook"></i>@CS — Ticket System
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope"></i>support@cst.com
+            </li>
           </ul>
         </div>
       </div>

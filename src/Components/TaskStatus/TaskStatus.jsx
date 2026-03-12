@@ -1,25 +1,25 @@
 import React from "react";
 
-const TaskStatus = ({ cart }) => {
+const TaskStatus = ({ cart, handleResolved }) => {
   return (
-    <div className="mb-10">
+    <div className="mb-5">
       <h2 className="text-color-h font-semibold text-[24px] mb-[16px]">
         Task Status
       </h2>
       {cart.length === 0 ? (
-        <p className="text-color-p text-[16px]">
+        <p className="text-color-p text-[16px] mt-[18px]">
           Select a ticket to add to Task Status
         </p>
       ) : (
         cart.map((ticket) => (
           <div
             key={ticket.id}
-            className="bg-white border border-gray-100 p-4 rounded-md mb-3"
+            className="mt-6 bg-white border border-gray-100 shadow-md p-4 rounded-md"
           >
             <p className="mb-3">{ticket.title}</p>
             <button
-              className="bg-[#02A53B] text-white w-full py-[6px] rounded-sm"
-              onClick={() => handleResolved(cart)}
+              className="bg-[#02A53B] text-white w-full py-[6px] rounded-sm cursor-pointer"
+              onClick={() => handleResolved(ticket)}
             >
               Complete
             </button>

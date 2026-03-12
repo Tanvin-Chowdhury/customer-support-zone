@@ -1,9 +1,12 @@
-.inter {
+*{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
+body {
+  background-color: #f9fafa;
+}
 .ul{
   color: #A1A1AA;
 }
@@ -14,4 +17,48 @@
 
 .text-color-h{
   color: #34485A;
+}
+
+.btn-gradient {
+  background: linear-gradient(125.07deg, rgba(99, 46, 227, 1), rgba(159, 98, 242, 1) 100%);
+}
+
+.hero-gradient-left {
+  background: linear-gradient(125.07deg, rgba(99, 46, 227, 1), rgba(159, 98, 242, 1) 100%);
+
+}
+
+.hero-gradient-right {
+  background: linear-gradient(90.00deg, rgba(84, 207, 103.68001556396484, 1), rgba(0, 130, 122.20001220703125, 1) 100%);
+}
+
+.hero-bg-image {
+  background-image: url(./assets/vector1.png), url(./assets/hero-bg-right.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, bottom right;
+  background-size: contain, contain;
+  min-height: 220px;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .hero-bg-image {
+    background-size: 60% auto, 50% auto;
+    min-height: 180px;
+  }
 }
