@@ -1,16 +1,52 @@
-# React + Vite
+### 
+```jsx
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. JSX is a syntax extension for JavaScript that allows you to write HTML-like code inside JavaScript.
+  Example - const element = <h3>Hello, World!</h3>;
 
-Currently, two official plugins are available:
+2. Props - Data passed from parent, Can not changed read only.
+   Example -
+     function Welcome(props) {
+        return <h3>Hello {props.name}</h3>;
+    }
+  State - Data managed inside component, Can be changed.
+   Example - const [count, setCount] = useState(0);
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. useState is a React Hook that allows you to add state to functional components.
+   Example -
+     const [count, setCount] = useState(0);
+   Here, count is current state
+   setCount is function to update state
+   Component re-renders automatically when state changes 
 
-## React Compiler
+4. Share state between components in React by Lifting State Up. Move state to the closest common parent and pass via props.
+   Example -
+   function Parent() {
+    const [data, setData] = useState("");
+    return (
+      <>
+        <Child1 data={data} />
+        <Child2 setData={setData} />
+      </>
+    );
+  }
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+  function Child1({ data }) {
+    return <h3>{data}</h3>;
+  }
+  
+  function Child2({ setData }) {
+    return (
+      <button onClick={() => setData("Hello from Child2")}>
+        Update Data
+      </button>
+    );
+  } 
 
-## Expanding the ESLint configuration
+5. function Button() {
+  function handleClick() {
+    alert("Clicked!");
+  }
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  return <button onClick={handleClick}>Click Me</button>;
+}
